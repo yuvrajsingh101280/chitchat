@@ -1,0 +1,127 @@
+.ls {
+  background-color: #001030;
+  color: white;
+  height: 75vh;
+  width: 100%;
+}
+.lstop {
+  padding: 20px;
+}
+.lsnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.lsnav div {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+}
+h2 {
+  font-size: 15px;
+}
+.menu {
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.lssearch {
+  display: flex;
+  background-color: #002670;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.lssearch img {
+  filter: invert();
+  width: 20px;
+}
+.lssearch input {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: white;
+  font-size: 11px;
+}
+.lssearch input::placeholder {
+  color: #c8c8c8;
+}
+
+.lslist {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 380px;
+
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+.friends img {
+  width: 35px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.friends div {
+  display: flex;
+  flex-direction: column;
+}
+.friends span {
+  color: #9f9f9f;
+  font-size: 11px;
+}
+.friends:hover {
+  background-color: #077eff;
+}
+.friends:hover span {
+  color: white;
+}
+.lsnav .menu {
+  position: relative;
+  padding: 10px 0px;
+}
+.menu .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  top: 100%;
+  right: 0;
+  width: 130px;
+  padding: 15px 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.menu .submenu p:first-child {
+  border-bottom: 1px solid rgb(107, 105, 105);
+  margin-bottom: 2px;
+}
+.menu .submenu p {
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.menu:hover .submenu {
+  display: block;
+}

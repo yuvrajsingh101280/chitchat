@@ -1,0 +1,114 @@
+.chatbox {
+  height: 75vh;
+  position: relative;
+  background-color: #f1f5ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatuser {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.chatuser img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.chatuser img:first-child {
+  width: 38px;
+  aspect-ratio: 1/1;
+}
+
+.chatuser p {
+  flex: 1;
+  font-weight: 500;
+  font-size: 20px;
+  color: #393939;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chatmsg {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 10px; /* Adds space at the bottom to prevent overlap with chat input */
+}
+
+.smsg div img,
+.rmsg div img {
+  width: 27px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.chatinput {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  background: white;
+  border-top: 1px solid #c6c6c6; /* Adds a border at the top of the input area */
+}
+
+.chatinput img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.chatinput input:first-child {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.chatinput label {
+  display: flex;
+}
+
+.chatinput label img {
+  width: 22px;
+}
+.smsg,
+.rmsg {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+
+  padding: 0px 15px;
+}
+.rmsg {
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.msg {
+  color: white;
+  background-color: #077eef;
+  padding: 8px;
+  max-width: 200px;
+  font-size: 11px;
+
+  border-radius: 8px 8px 0px 8px;
+  margin-bottom: 30px;
+}
+.rmsg .msg {
+  border-radius: 8px 8px 8px 0px;
+}
+.smsg div,
+.rmsg div {
+  text-align: center;
+  font-size: 9px;
+}
+.msgimage {
+  max-width: 230px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
