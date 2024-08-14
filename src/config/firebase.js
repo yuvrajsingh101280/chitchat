@@ -75,7 +75,7 @@ const logout = async () => {
 };
 
 
-export { signup, login, logout, db, auth, emailverification }
+export { signup, login, logout, db, auth }
 
 
 

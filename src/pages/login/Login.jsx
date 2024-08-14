@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./Login.module.css";
 import assets from "../../assets/assets";
 import { useState } from "react";
-import { signup, login, emailverification } from "../../config/firebase";
+import { signup, login } from "../../config/firebase";
 import toast from "react-hot-toast";
+
+import Loader from "../../components/loader/Loader";
 
 const Login = () => {
   const [currState, setcurrState] = useState("sign up");
