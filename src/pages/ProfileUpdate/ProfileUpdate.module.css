@@ -51,3 +51,61 @@ textarea {
   border: 1px solid #c9c9c9;
   outline-color: #077eff;
 }
+/* For smaller screens, adjusting the profile container layout */
+@media (max-width: 768px) {
+  .profilecontainer {
+    flex-direction: column-reverse;
+    min-width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .profile form {
+    padding: 20px;
+    gap: 15px;
+    min-width: 100%;
+  }
+
+  .profile input,
+  textarea {
+    min-width: 100%;
+  }
+
+  .profilepic {
+    max-width: 120px;
+  }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+  .profilecontainer {
+    padding: 10px;
+  }
+
+  .profilepic {
+    max-width: 100px;
+  }
+
+  .profile input,
+  textarea {
+    padding: 8px;
+  }
+
+  .profile form {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .profile form h3 {
+    font-size: 18px;
+  }
+
+  .profile label img {
+    width: 40px;
+  }
+
+  .profile input,
+  textarea {
+    min-width: 90%;
+  }
+}
