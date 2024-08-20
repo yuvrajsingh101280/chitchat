@@ -100,7 +100,6 @@ const LeftSideBar = () => {
             <img src={assets.menu_icon} alt="" />
             <div className={styles.submenu}>
               <p onClick={() => navigate("/profile")}>Edit Profile</p>
-
               <p>Logout</p>
             </div>
           </div>
@@ -127,7 +126,7 @@ const LeftSideBar = () => {
                 <span>{user.bio}</span>
               </div>
             </div>
-          ) : (
+          ) : chatData && chatData.length > 0 ? (
             chatData.map((item, index) => (
               <div key={index} className={styles.friends}>
                 <img src={item.userData.avatar} alt="" />
@@ -137,6 +136,8 @@ const LeftSideBar = () => {
                 </div>
               </div>
             ))
+          ) : (
+            <p>No chats available</p>
           )}
         </div>
       </div>
