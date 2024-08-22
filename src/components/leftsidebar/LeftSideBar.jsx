@@ -88,6 +88,10 @@ const LeftSideBar = () => {
     }
   };
 
+  const setChat = async (item) => {
+    console.log(item);
+  };
+
   return (
     <div className={styles.ls}>
       <div className={styles.lstop}>
@@ -128,7 +132,11 @@ const LeftSideBar = () => {
             </div>
           ) : chatData && chatData.length > 0 ? (
             chatData.map((item, index) => (
-              <div key={index} className={styles.friends}>
+              <div
+                onClick={() => setChat(item)}
+                key={index}
+                className={styles.friends}
+              >
                 <img src={item.userData.avatar} alt="" />
                 <div>
                   <p>{item.userData.name}</p>
